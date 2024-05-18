@@ -84,9 +84,6 @@ To get started with the project, follow these steps:
 
 Once everything is set up, the system will continuously ingest, process, and visualize real-time data from the configured sources. You can access the Power BI dashboards to monitor the stock prices, trading volumes, and Bitcoin prices in real-time.
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Acknowledgments
 
@@ -95,7 +92,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - Azure Blob Storage for data storage.
 - Power BI for data visualization.
 
-For any questions or support, please contact [your email address].
+For any questions or support, please contact animeshn@umd.edu.
 
 ---
 
