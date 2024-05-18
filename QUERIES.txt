@@ -1,0 +1,45 @@
+SELECT
+    datetime, CAST([open] AS FLOAT) AS [open], CAST([high] AS FLOAT) AS [high], CAST([low] AS FLOAT) AS [low],
+    CAST([close] AS FLOAT) AS [close], CAST([volume] AS FLOAT) AS [volume], EventProcessedUtcTime, partitionId, EventEnqueuedUtcTime
+INTO
+    [aapl-output]
+FROM
+    [aaplstock]
+
+SELECT 
+    datetime, CAST([open] AS FLOAT) AS [open], CAST([high] AS FLOAT) AS [high], CAST([low] AS FLOAT) AS [low],
+    CAST([close] AS FLOAT) AS [close], CAST([volume] AS FLOAT) AS [volume], EventProcessedUtcTime, partitionId, EventEnqueuedUtcTime
+INTO
+    [msft-output]
+FROM
+    [msftstock]
+
+SELECT 
+    *
+INTO
+    [outputbtc]
+FROM
+    [btcstock]
+
+SELECT
+    datetime, CAST([open] AS FLOAT) AS [open], CAST([high] AS FLOAT) AS [high], CAST([low] AS FLOAT) AS [low],
+    CAST([close] AS FLOAT) AS [close], CAST([volume] AS FLOAT) AS [volume], EventProcessedUtcTime, partitionId, EventEnqueuedUtcTime
+INTO
+    [appl-workspace]
+FROM
+    [aaplstock]
+
+SELECT 
+    datetime, CAST([open] AS FLOAT) AS [open], CAST([high] AS FLOAT) AS [high], CAST([low] AS FLOAT) AS [low],
+    CAST([close] AS FLOAT) AS [close], CAST([volume] AS FLOAT) AS [volume], EventProcessedUtcTime, partitionId, EventEnqueuedUtcTime
+INTO
+    [msft-workspace]
+FROM
+    [msftstock]
+
+SELECT 
+    *
+INTO
+    [My-workspace]
+FROM
+    [btcstock]
